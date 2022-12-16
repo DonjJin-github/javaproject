@@ -1,0 +1,3010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .row {
+  box-sizing: bordor-box;
+ width: 300px;
+ height: 940px;
+ overflow: auto;
+}
+  .row::-webkit-scrollbar {
+    width: 5px;
+  }
+  .row::-webkit-scrollbar-thumb {
+    background-color: #c267ff9c;
+  }
+  .row::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 25%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 92%;
+  font-size: 18px;
+  padding: 11px;
+  font-family: 'Jua', sans-serif;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -15px;
+  background-color: #FEFBF3;
+}
+
+#myMenu li a {
+width: 92%;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Jua', sans-serif;
+  font-size: 20px;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #dba6ff9c;
+}
+
+      .Eu{
+        top: 50px;
+        left: 400px;
+        background-color:transparent;
+        border: 0;
+        outline: 0;
+        position: absolute;
+        clip-path: polygon(22% 86%, 25% 90%, 25% 90%, 29% 89%, 29% 89%, 32% 86%, 32% 86%, 33% 82%, 33% 82%, 35% 80%, 35% 80%, 37% 82%, 37% 82%, 37% 85%, 37% 85%, 39% 86%, 39% 86%, 42% 88%, 42% 88%, 46% 88%, 46% 88%, 51% 92%, 51% 92%, 55% 92%, 55% 92%, 57% 87%, 57% 87%, 57% 81%, 57% 81%, 65% 81%, 65% 81%, 75% 82%, 75% 82%, 77% 76%, 77% 76%, 88% 71%, 88% 71%, 93% 50%, 93% 50%, 91% 31%, 91% 31%, 93% 18%, 93% 18%, 89% 10%, 89% 10%, 70% 29%, 70% 29%, 55% 10%, 55% 10%, 42% 8%, 42% 8%, 37% 14%, 37% 14%, 46% 34%, 46% 34%, 23% 42%, 23% 42%, 18% 36%, 18% 36%, 7% 37%, 7% 37%, 11% 52%, 11% 52%, 19% 64%, 19% 64%, 19% 76%, 19% 76%);
+        z-index: 3;
+      }
+      .Eu:hover{
+        transform: scale(1.1);
+        
+      }
+      .Africa{
+        top: 325px;
+        left: 342px;
+        background-color:transparent;
+        border: 0;
+        outline: 0;
+        position: absolute;
+        clip-path: polygon(28% 19%, 24% 26%, 23% 38%, 28% 47%, 41% 49%, 43% 60%, 49% 89%, 60% 88%, 72% 80%, 75% 69%, 76% 50%, 77% 38%, 72% 32%, 68% 31%, 61% 16%, 52% 14%, 37% 10%, 32% 12%);
+        z-index: 2;
+      }
+      .Africa:hover{
+        transform: scale(1.1);
+      }
+      .Asia{
+        top: 8px;
+        left: 600px;
+        background-color:transparent;
+        border: 0;
+        outline: 0;
+        position: absolute;
+        clip-path: polygon(41% 19%, 45% 9%, 61% 13%, 88% 23%, 92% 31%, 81% 42%, 71% 51%, 60% 67%, 61% 75%, 55% 91%, 34% 79%, 25% 78%, 16% 73%, 12% 63%, 10% 53%, 20% 49%, 27% 44%, 29% 23%);
+        z-index: 1;
+      }
+      .Asia:hover{
+        transform: scale(1.1);
+      }
+      .Na{
+        top: 50px;
+        left: 1300px;
+        background-color:transparent;
+        border: 0;
+        outline: 0;
+        position: absolute;
+        clip-path: polygon(29% 46%, 39% 65%, 46% 82%, 53% 93%, 70% 100%, 73% 95%, 82% 85%, 73% 77%, 91% 59%, 90% 38%, 79% 19%, 85% 0, 68% 0, 58% 3%, 39% 14%, 34% 22%, 14% 21%, 7% 34%, 14% 50%);
+      }
+      .Na:hover{
+        transform: scale(1.1);
+      }
+      .Sa{
+        top: 475px;
+        left: 1548px;
+        background-color:transparent;
+        border: 0;
+        outline: 0;
+        position: absolute;
+        clip-path: polygon(38% 8%, 42% 10%, 47% 9%, 49% 13%, 54% 16%, 57% 20%, 58% 23%, 63% 25%, 67% 26%, 70% 29%, 70% 32%, 67% 38%, 66% 45%, 64% 49%, 61% 50%, 59% 51%, 59% 55%, 57% 58%, 50% 69%, 47% 71%, 45% 72%, 42% 88%, 44% 92%, 41% 92%, 37% 91%, 36% 84%, 37% 65%, 40% 45%, 34% 38%, 30% 27%, 34% 11%);
+      }
+      .Sa:hover{
+        transform: scale(1.1);
+      }
+      .Oc{
+        top: 525px;
+        left: 970px;
+        background-color:transparent;
+        border: 0;
+        outline: 0;
+        position: absolute;
+        clip-path: polygon(33% 7%, 48% 13%, 51% 16%, 57% 14%, 58% 18%, 54% 20%, 56% 25%, 48% 26%, 60% 52%, 52% 73%, 70% 39%, 74% 43%, 54% 68%, 80% 72%, 79% 61%, 89% 68%, 84% 78%, 83% 88%, 72% 94%, 72% 71%, 49% 81%, 46% 72%, 32% 60%, 14% 65%, 11% 42%, 34% 24%);
+      }
+      .Oc:hover{
+        transform: scale(1.1);
+      }
+      h2 {
+        margin-top: -15px;
+        margin-bottom: 0px;
+        padding: 20px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Arial Black", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .s1 {
+        background-color: #c267ff9c;
+        color: #ffffff;
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255,0.4);
+      }
+
+    .black_bg{
+        display: none;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #FEFBF3;
+        opacity:0.3;
+        top:0;
+        left: 0;
+    }
+
+    .modal_wrap{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap1{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close1{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close1> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap2{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close2{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close2> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap3{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close3{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close3> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap4{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close4{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close4> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap5{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close5{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close5> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap6{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close6{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close6> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap7{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close7{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close7> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap8{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close8{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close8> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap9{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close9{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close9> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap10{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close10{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close10> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap11{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close11{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close11> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap12{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close12{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close12> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap13{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close13{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close13> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+    
+    .modal_wrap14{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close14{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close14> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap15{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close15{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close15> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap16{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close16{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close16> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap17{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close17{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close17> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap18{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close18{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close18> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap19{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close19{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close19> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap20{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close20{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close20> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap21{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close21{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close21> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap22{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close22{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close22> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap23{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close23{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close23> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap24{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close24{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close24> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap25{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close25{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close25> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap26{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close26{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close26> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap27{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close27{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close27> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap28{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close28{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close28> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+    
+    .modal_wrap29{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close29{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close29> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap30{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close30{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close30> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap31{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close31{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close31> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap32{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close32{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close32> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap33{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close33{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close33> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap34{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close34{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close34> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap35{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close35{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close35> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap36{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close36{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close36> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap37{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close37{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close37> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap38{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close38{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close38> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap39{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close39{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close39> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap40{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close40{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close40> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap41{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close41{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close41> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap42{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close42{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close42> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap43{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close43{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close43> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+    
+    .modal_wrap45{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close45{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close45> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap46{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close46{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close46> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap47{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close47{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close47> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap48{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close48{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close49> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap50{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close50{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close51> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap52{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close52{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close52> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap53{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close53{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close53> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap54{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close54{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close54> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap55{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close55{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close55> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap56{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close56{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close56> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap57{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close57{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close57> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap58{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close58{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close58> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap59{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close59{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close59> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap60{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close60{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close60> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap61{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close61{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close61> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+    
+    .modal_wrap62{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close62{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close62> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap63{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close63{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close63> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap64{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close64{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close64> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    .modal_wrap67{ 
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:200px;
+        left: 650px;
+        background:#FEFBF3;
+        z-index: 200;
+    }
+    .modal_close67{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+    .modal_close67> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        
+    }
+
+    </style>
+</head>
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2 class="s1">Africa Country</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a id="modal_btn1" href="#">가나<br><img src="아프리카/GH.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn2" href="#">가봉<br><img src="아프리카/GA.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn3" href="#">감비아<br><img src="아프리카/GM.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn4" href="#">기니<br><img src="아프리카/GN.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn5" href="#">기니비사우<br><img src="아프리카/GW.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn6" href="#">나미비아<br><img src="아프리카/NA.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn7" href="#">나이지리아<br><img src="아프리카/NG.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn8" href="#">남수단<br><img src="아프리카/SS.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn9" href="#">남아프리카<br><img src="아프리카/ZA.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn10" href="#">니제르<br><img src="아프리카/NE.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn11" href="#">라이베리아<br><img src="아프리카/LR.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn12" href="#">레소토<br><img src="아프리카/LS.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn13" href="#">르완다<br><img src="아프리카/RW.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn14" href="#">마다가스카르<br><img src="아프리카/MG.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn15" href="#">말라위<br><img src="아프리카/MW.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn16" href="#">말리<br><img src="아프리카/ML.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn17" href="#">모리셔스<br><img src="아프리카/MU.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn18" href="#">모잠비크<br><img src="아프리카/MZ.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn19" href="#">베냉<br><img src="아프리카/BJ.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn20" href="#">보츠와나<br><img src="아프리카/BW.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn21" href="#">부룬디<br><img src="아프리카/BI.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn22" href="#">부르키나파소<br><img src="아프리카/BF.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn23" href="#">상투메프린시페<br><img src="아프리카/ST.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn24" href="#">세네갈<br><img src="아프리카/SN.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn25" href="#">세이셸<br><img src="아프리카/SC.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn26" href="#">소말리아<br><img src="아프리카/SO.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn27" href="#">수단<br><img src="아프리카/SD.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn28" href="#">시에라리온<br><img src="아프리카/SL.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn29" href="#">앙골라<br><img src="아프리카/AO.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn30" href="#">에리트레아<br><img src="아프리카/ER.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn31" href="#">에스와티니<br><img src="아프리카/SZ.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn32" href="#">에티오피아<br><img src="아프리카/ET.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn33" href="#">우간다<br><img src="아프리카/UG.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn34" href="#">잠비아<br><img src="아프리카/ZM.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn35" href="#">적도기니<br><img src="아프리카/GQ.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn36" href="#">중앙아프리카<br><img src="아프리카/CF.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn37" href="#">지부티<br><img src="아프리카/DJ.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn38" href="#">짐바브웨<br><img src="아프리카/ZW.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn39" href="#">차드<br><img src="아프리카/TD.gif" width="150" height="90"></a></li>
+      <li><a  id="modal_btn" href="#">카메룬<br><img src="아프리카/CM.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn40" href="#">카보베르데<br><img src="아프리카/CV.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn41" href="#">케냐<br><img src="아프리카/KE.png" width="150" height="90"></a></li>
+      <li><a id="modal_btn42" href="#">코모로<br><img src="아프리카/KM.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn43" href="#">코트디부아르<br><img src="아프리카/CI.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn44" href="#">콩고공화국<br><img src="아프리카/CG.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn45" href="#">콩고민주공화국<br><img src="아프리카/CD.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn46" href="#">탄자니아<br><img src="아프리카/TZ.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn47" href="#">토고<br><img src="아프리카/TG.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn48" href="#">레바논<br><img src="아프리카/LB.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn49" href="#">리비아<br><img src="아프리카/LY.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn50" href="#">모로코<br><img src="아프리카/MA.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn51" href="#">모리티니아 이슬람<br><img src="아프리카/MR.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn52" href="#">바레인<br><img src="아프리카/BH.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn53" href="#">사우디아리비아<br><img src="아프리카/SA.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn54" href="#">시리아<br><img src="아프리카/SY.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn56" href="#">아랍에미리트<br><img src="아프리카/AE.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn57" href="#">알제리<br><img src="아프리카/DZ.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn58" href="#">예멘<br><img src="아프리카/YE.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn59" href="#">오만<br><img src="아프리카/OM.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn60" href="#">요르단<br><img src="아프리카/JO.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn61" href="#">이라크<br><img src="아프리카/IQ.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn62" href="#">이란<br><img src="아프리카/IR.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn63" href="#">이스라엘<br><img src="아프리카/IL.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn64" href="#">이집트<br><img src="아프리카/EG.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn65" href="#">카타르<br><img src="아프리카/QA.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn66" href="#">쿠웨이트<br><img src="아프리카/KW.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn67" href="#">튀니지<br><img src="아프리카/TN.gif" width="150" height="90"></a></li>
+      <li><a id="modal_btn68" href="#">팔레스타인<br><img src="아프리카/PS.gif" width="150" height="90"></a></li>
+    </ul>
+  </div>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+window.onload = function() {
+ 
+ function onClick() {
+     document.querySelector('.modal_wrap').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick() {
+     document.querySelector('.modal_wrap').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn').addEventListener('click', onClick);
+ document.querySelector('.modal_close').addEventListener('click', offClick);
+
+ function onClick1() {
+     document.querySelector('.modal_wrap1').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick1() {
+     document.querySelector('.modal_wrap1').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn1').addEventListener('click', onClick1);
+ document.querySelector('.modal_close1').addEventListener('click', offClick1);
+
+ function onClick2() {
+     document.querySelector('.modal_wrap2').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick2() {
+     document.querySelector('.modal_wrap2').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn2').addEventListener('click', onClick2);
+ document.querySelector('.modal_close2').addEventListener('click', offClick2);
+
+ function onClick3() {
+     document.querySelector('.modal_wrap3').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick3() {
+     document.querySelector('.modal_wrap3').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn3').addEventListener('click', onClick3);
+ document.querySelector('.modal_close3').addEventListener('click', offClick3);
+
+ function onClick4() {
+     document.querySelector('.modal_wrap4').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick4() {
+     document.querySelector('.modal_wrap4').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn4').addEventListener('click', onClick4);
+ document.querySelector('.modal_close4').addEventListener('click', offClick4);
+
+ function onClick5() {
+     document.querySelector('.modal_wrap5').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick5() {
+     document.querySelector('.modal_wrap5').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn5').addEventListener('click', onClick5);
+ document.querySelector('.modal_close5').addEventListener('click', offClick5);
+
+ function onClick6() {
+     document.querySelector('.modal_wrap6').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick6() {
+     document.querySelector('.modal_wrap6').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn6').addEventListener('click', onClick6);
+ document.querySelector('.modal_close6').addEventListener('click', offClick6);
+
+
+function onClick7() {
+     document.querySelector('.modal_wrap7').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick7() {
+     document.querySelector('.modal_wrap7').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn7').addEventListener('click', onClick7);
+ document.querySelector('.modal_close7').addEventListener('click', offClick7);
+
+ function onClick8() {
+     document.querySelector('.modal_wrap8').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick8() {
+     document.querySelector('.modal_wrap8').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn8').addEventListener('click', onClick8);
+ document.querySelector('.modal_close8').addEventListener('click', offClick8);
+
+ function onClick9() {
+     document.querySelector('.modal_wrap9').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick9() {
+     document.querySelector('.modal_wrap9').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn9').addEventListener('click', onClick9);
+ document.querySelector('.modal_close9').addEventListener('click', offClick9);
+
+ function onClick10() {
+     document.querySelector('.modal_wrap10').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick10() {
+     document.querySelector('.modal_wrap10').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn10').addEventListener('click', onClick10);
+ document.querySelector('.modal_close10').addEventListener('click', offClick10);
+
+  function onClick11() {
+     document.querySelector('.modal_wrap11').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick11() {
+     document.querySelector('.modal_wrap11').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn11').addEventListener('click', onClick11);
+ document.querySelector('.modal_close11').addEventListener('click', offClick11);
+
+ function onClick12() {
+     document.querySelector('.modal_wrap12').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick12() {
+     document.querySelector('.modal_wrap12').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn12').addEventListener('click', onClick12);
+ document.querySelector('.modal_close12').addEventListener('click', offClick12);
+
+ function onClick13() {
+     document.querySelector('.modal_wrap13').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick13() {
+     document.querySelector('.modal_wrap13').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn13').addEventListener('click', onClick13);
+ document.querySelector('.modal_close13').addEventListener('click', offClick13);
+
+ function onClick14() {
+     document.querySelector('.modal_wrap14').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick14() {
+     document.querySelector('.modal_wrap14').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn14').addEventListener('click', onClick14);
+ document.querySelector('.modal_close14').addEventListener('click', offClick14);
+
+ function onClick15() {
+     document.querySelector('.modal_wrap15').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick15() {
+     document.querySelector('.modal_wrap15').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn15').addEventListener('click', onClick15);
+ document.querySelector('.modal_close15').addEventListener('click', offClick15);
+
+ function onClick16() {
+     document.querySelector('.modal_wrap16').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick16() {
+     document.querySelector('.modal_wrap16').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn16').addEventListener('click', onClick6);
+ document.querySelector('.modal_close16').addEventListener('click', offClick6);
+
+
+function onClick17() {
+     document.querySelector('.modal_wrap17').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick17() {
+     document.querySelector('.modal_wrap17').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn17').addEventListener('click', onClick17);
+ document.querySelector('.modal_close17').addEventListener('click', offClick17);
+
+ function onClick18() {
+     document.querySelector('.modal_wrap18').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick18() {
+     document.querySelector('.modal_wrap18').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn18').addEventListener('click', onClick18);
+ document.querySelector('.modal_close18').addEventListener('click', offClick18);
+
+ function onClick19() {
+     document.querySelector('.modal_wrap19').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick19() {
+     document.querySelector('.modal_wrap19').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn19').addEventListener('click', onClick19);
+ document.querySelector('.modal_close19').addEventListener('click', offClick19);
+
+ function onClick20() {
+     document.querySelector('.modal_wrap20').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick20() {
+     document.querySelector('.modal_wrap20').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+ document.getElementById('modal_btn20').addEventListener('click', onClick20);
+ document.querySelector('.modal_close20').addEventListener('click', offClick20);
+
+ function onClick21() {
+     document.querySelector('.modal_wrap21').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick21() {
+     document.querySelector('.modal_wrap21').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn21').addEventListener('click', onClick21);
+ document.querySelector('.modal_close21').addEventListener('click', offClick21);
+
+ function onClick22() {
+     document.querySelector('.modal_wrap22').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick22() {
+     document.querySelector('.modal_wrap22').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn22').addEventListener('click', onClick22);
+ document.querySelector('.modal_close22').addEventListener('click', offClick22);
+
+ function onClick23() {
+     document.querySelector('.modal_wrap23').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick23() {
+     document.querySelector('.modal_wrap23').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn23').addEventListener('click', onClick23);
+ document.querySelector('.modal_close23').addEventListener('click', offClick23);
+
+ function onClick24() {
+     document.querySelector('.modal_wrap24').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick24() {
+     document.querySelector('.modal_wrap24').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn24').addEventListener('click', onClick24);
+ document.querySelector('.modal_close24').addEventListener('click', offClick24);
+
+ function onClick25() {
+     document.querySelector('.modal_wrap25').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick5() {
+     document.querySelector('.modal_wrap25').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn25').addEventListener('click', onClick25);
+ document.querySelector('.modal_close25').addEventListener('click', offClick25);
+
+ function onClick26() {
+     document.querySelector('.modal_wrap26').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick26() {
+     document.querySelector('.modal_wrap26').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn26').addEventListener('click', onClick26);
+ document.querySelector('.modal_close26').addEventListener('click', offClick26);
+
+
+function onClick27() {
+     document.querySelector('.modal_wrap27').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick27() {
+     document.querySelector('.modal_wrap27').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn27').addEventListener('click', onClick27);
+ document.querySelector('.modal_close27').addEventListener('click', offClick27);
+
+ function onClick28() {
+     document.querySelector('.modal_wrap28').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick28() {
+     document.querySelector('.modal_wrap28').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn28').addEventListener('click', onClick28);
+ document.querySelector('.modal_close28').addEventListener('click', offClick28);
+
+ function onClick29() {
+     document.querySelector('.modal_wrap29').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick9() {
+     document.querySelector('.modal_wrap29').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn29').addEventListener('click', onClick29);
+ document.querySelector('.modal_close29').addEventListener('click', offClick29);
+
+ function onClick30() {
+     document.querySelector('.modal_wrap10').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick30() {
+     document.querySelector('.modal_wrap30').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn30').addEventListener('click', onClick30);
+ document.querySelector('.modal_close30').addEventListener('click', offClick30);
+
+ function onClick31() {
+     document.querySelector('.modal_wrap31').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick31() {
+     document.querySelector('.modal_wrap31').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn31').addEventListener('click', onClick31);
+ document.querySelector('.modal_close31').addEventListener('click', offClick31);
+
+ function onClick32() {
+     document.querySelector('.modal_wrap32').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick32() {
+     document.querySelector('.modal_wrap32').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn32').addEventListener('click', onClick32);
+ document.querySelector('.modal_close32').addEventListener('click', offClick32);
+
+ function onClick33() {
+     document.querySelector('.modal_wrap33').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick33() {
+     document.querySelector('.modal_wrap33').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn33').addEventListener('click', onClick33);
+ document.querySelector('.modal_close33').addEventListener('click', offClick33);
+
+ function onClick34() {
+     document.querySelector('.modal_wrap34').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick34() {
+     document.querySelector('.modal_wrap34').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn34').addEventListener('click', onClick34);
+ document.querySelector('.modal_close34').addEventListener('click', offClick34);
+
+ function onClick35() {
+     document.querySelector('.modal_wrap35').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick35() {
+     document.querySelector('.modal_wrap35').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn35').addEventListener('click', onClick35);
+ document.querySelector('.modal_close35').addEventListener('click', offClick35);
+
+ function onClick36() {
+     document.querySelector('.modal_wrap36').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick36() {
+     document.querySelector('.modal_wrap36').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn36').addEventListener('click', onClick36);
+ document.querySelector('.modal_close36').addEventListener('click', offClick36);
+
+
+function onClick37() {
+     document.querySelector('.modal_wrap37').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick37() {
+     document.querySelector('.modal_wrap37').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn37').addEventListener('click', onClick37);
+ document.querySelector('.modal_close37').addEventListener('click', offClick37);
+
+ function onClick38() {
+     document.querySelector('.modal_wrap38').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick38() {
+     document.querySelector('.modal_wrap38').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn38').addEventListener('click', onClick38);
+ document.querySelector('.modal_close38').addEventListener('click', offClick38);
+
+ function onClick39() {
+     document.querySelector('.modal_wrap39').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick39() {
+     document.querySelector('.modal_wrap39').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn39').addEventListener('click', onClick39);
+ document.querySelector('.modal_close39').addEventListener('click', offClick39);
+
+ function onClick40() {
+     document.querySelector('.modal_wrap40').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick40() {
+     document.querySelector('.modal_wrap40').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn40').addEventListener('click', onClick40);
+ document.querySelector('.modal_close40').addEventListener('click', offClick40);
+
+
+ function onClick41() {
+     document.querySelector('.modal_wrap41').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick41() {
+     document.querySelector('.modal_wrap41').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn41').addEventListener('click', onClick41);
+ document.querySelector('.modal_close41').addEventListener('click', offClick41);
+
+ function onClick42() {
+     document.querySelector('.modal_wrap42').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick42() {
+     document.querySelector('.modal_wrap42').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn42').addEventListener('click', onClick42);
+ document.querySelector('.modal_close42').addEventListener('click', offClick42);
+
+ function onClick43() {
+     document.querySelector('.modal_wrap43').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick43() {
+     document.querySelector('.modal_wrap43').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn43').addEventListener('click', onClick43);
+ document.querySelector('.modal_close43').addEventListener('click', offClick43);
+
+ function onClick44() {
+     document.querySelector('.modal_wrap44').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick44() {
+     document.querySelector('.modal_wrap44').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn44').addEventListener('click', onClick44);
+ document.querySelector('.modal_close44').addEventListener('click', offClick44);
+
+ function onClick45() {
+     document.querySelector('.modal_wrap45').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick45() {
+     document.querySelector('.modal_wrap45').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn45').addEventListener('click', onClick45);
+ document.querySelector('.modal_close45').addEventListener('click', offClick45);
+
+ function onClick46() {
+     document.querySelector('.modal_wrap46').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick46() {
+     document.querySelector('.modal_wrap46').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn46').addEventListener('click', onClick46);
+ document.querySelector('.modal_close46').addEventListener('click', offClick46);
+
+
+function onClick47() {
+     document.querySelector('.modal_wrap47').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick47() {
+     document.querySelector('.modal_wrap47').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn47').addEventListener('click', onClick47);
+ document.querySelector('.modal_close47').addEventListener('click', offClick47);
+
+ function onClick48() {
+     document.querySelector('.modal_wrap48').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick48() {
+     document.querySelector('.modal_wrap48').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn48').addEventListener('click', onClick48);
+ document.querySelector('.modal_close48').addEventListener('click', offClick48);
+
+ function onClick49() {
+     document.querySelector('.modal_wrap49').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick49() {
+     document.querySelector('.modal_wrap49').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn49').addEventListener('click', onClick49);
+ document.querySelector('.modal_close49').addEventListener('click', offClick49);
+
+ function onClick50() {
+     document.querySelector('.modal_wrap50').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick50() {
+     document.querySelector('.modal_wrap50').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn50').addEventListener('click', onClick50);
+ document.querySelector('.modal_close50').addEventListener('click', offClick50);
+
+ function onClick51() {
+     document.querySelector('.modal_wrap51').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick51() {
+     document.querySelector('.modal_wrap51').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn51').addEventListener('click', onClick51);
+ document.querySelector('.modal_close51').addEventListener('click', offClick51);
+
+ function onClick52() {
+     document.querySelector('.modal_wrap52').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick52() {
+     document.querySelector('.modal_wrap52').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn52').addEventListener('click', onClick52);
+ document.querySelector('.modal_close52').addEventListener('click', offClick52);
+
+ function onClick53() {
+     document.querySelector('.modal_wrap53').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick53() {
+     document.querySelector('.modal_wrap53').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn53').addEventListener('click', onClick53);
+ document.querySelector('.modal_close53').addEventListener('click', offClick53);
+
+ function onClick54() {
+     document.querySelector('.modal_wrap54').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClic54() {
+     document.querySelector('.modal_wrap54').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn54').addEventListener('click', onClick54);
+ document.querySelector('.modal_close54').addEventListener('click', offClick54);
+
+ function onClick55() {
+     document.querySelector('.modal_wrap55').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick55() {
+     document.querySelector('.modal_wrap55').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn55').addEventListener('click', onClick55);
+ document.querySelector('.modal_close55').addEventListener('click', offClick55);
+
+ function onClick56() {
+     document.querySelector('.modal_wrap56').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick56() {
+     document.querySelector('.modal_wrap56').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn56').addEventListener('click', onClick56);
+ document.querySelector('.modal_close56').addEventListener('click', offClick56);
+
+
+function onClick57() {
+     document.querySelector('.modal_wrap57').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick57() {
+     document.querySelector('.modal_wrap57').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn57').addEventListener('click', onClick57);
+ document.querySelector('.modal_close57').addEventListener('click', offClick57);
+
+ function onClick58() {
+     document.querySelector('.modal_wrap58').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick58() {
+     document.querySelector('.modal_wrap58').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn58').addEventListener('click', onClick58);
+ document.querySelector('.modal_close58').addEventListener('click', offClick58);
+
+ function onClick59() {
+     document.querySelector('.modal_wrap59').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick59() {
+     document.querySelector('.modal_wrap59').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn59').addEventListener('click', onClick59);
+ document.querySelector('.modal_close59').addEventListener('click', offClick59);
+
+ function onClick60() {
+     document.querySelector('.modal_wrap10').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick60() {
+     document.querySelector('.modal_wrap60').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn60').addEventListener('click', onClick60);
+ document.querySelector('.modal_close60').addEventListener('click', offClick60);
+
+ function onClick61() {
+     document.querySelector('.modal_wrap61').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick61() {
+     document.querySelector('.modal_wrap61').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn61').addEventListener('click', onClick61);
+ document.querySelector('.modal_close61').addEventListener('click', offClick61);
+
+ function onClick62() {
+     document.querySelector('.modal_wrap62').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick62() {
+     document.querySelector('.modal_wrap62').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn62').addEventListener('click', onClick62);
+ document.querySelector('.modal_close62').addEventListener('click', offClick62);
+
+ function onClick63() {
+     document.querySelector('.modal_wrap63').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick63() {
+     document.querySelector('.modal_wrap63').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn63').addEventListener('click', onClick63);
+ document.querySelector('.modal_close63').addEventListener('click', offClick63);
+
+ function onClick64() {
+     document.querySelector('.modal_wrap64').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick64() {
+     document.querySelector('.modal_wrap64').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn64').addEventListener('click', onClick64);
+ document.querySelector('.modal_close64').addEventListener('click', offClick64);
+
+ function onClick65() {
+     document.querySelector('.modal_wrap65').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick65() {
+     document.querySelector('.modal_wrap65').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn65').addEventListener('click', onClick65);
+ document.querySelector('.modal_close65').addEventListener('click', offClick65);
+
+ function onClick66() {
+     document.querySelector('.modal_wrap66').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick66() {
+     document.querySelector('.modal_wrap66').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn66').addEventListener('click', onClick66);
+ document.querySelector('.modal_close66').addEventListener('click', offClick66);
+
+
+function onClick67() {
+     document.querySelector('.modal_wrap67').style.display ='block';
+     document.querySelector('.black_bg').style.display ='block';
+ }   
+ function offClick67() {
+     document.querySelector('.modal_wrap67').style.display ='none';
+     document.querySelector('.black_bg').style.display ='none';
+ }
+
+ document.getElementById('modal_btn67').addEventListener('click', onClick67);
+ document.querySelector('.modal_close67').addEventListener('click', offClick67);
+
+};
+
+
+  </script>
+<body style="background-color:transparent">
+  <button type="button" onclick="location.href='eu.html' "class="Eu" ><img src="EU.png" width="500" height="380"></button>
+  <button type="button" class="Africa" ><img src="AFRICA.png" width="591" height="443"></button>
+  <button type="button" onclick="location.href='asia.html' "class="Asia" ><img src="ASIA.png" width="800" height="650"></button>
+  <button type="button" onclick="location.href='na.html' "class="Na" ><img src="NA.png" width="600" height="480"></button>
+  <button type="button" onclick="location.href='sa.html' " class="Sa" ><img src="SA.png" width="500" height="380"></button>
+  <button type="button" onclick="location.href='oc.html' "class="Oc" ><img src="OC.png" width="400" height="280"></button>
+  <div class="black_bg"></div>
+  <div class="modal_wrap">
+      <div class="modal_close"><a href="#"></a></div>
+      <div><img src="아프리카정보/카메룬.jpg" width="800" height="500"></div>
+  </div>
+
+  <div class="modal_wrap1">
+    <div class="modal_close1"><a href="#"></a></div>
+    <div><img src="아프리카정보/가나.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap2">
+  <div class="modal_close2"><a href="#"></a></div>
+  <div><img src="아프리카정보/가봉.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap3">
+  <div class="modal_close3"><a href="#"></a></div>
+  <div><img src="아프리카정보/감비아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap4">
+  <div class="modal_close4"><a href="#"></a></div>
+  <div><img src="아프리카정보/기니.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap5">
+  <div class="modal_close5"><a href="#"></a></div>
+  <div><img src="아프리카정보/기니비사우.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap6">
+  <div class="modal_close6"><a href="#"></a></div>
+  <div><img src="아프리카정보/나미비아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap7">
+  <div class="modal_close7"><a href="#"></a></div>
+  <div><img src="아프리카정보/나이지리아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap8">
+  <div class="modal_close8"><a href="#"></a></div>
+  <div><img src="아프리카정보/남수단.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap9">
+  <div class="modal_close9"><a href="#"></a></div>
+  <div><img src="아프리카정보/남아프리카.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap10">
+  <div class="modal_close10"><a href="#"></a></div>
+  <div><img src="아프리카정보/니제르.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap11">
+  <div class="modal_close11"><a href="#"></a></div>
+  <div><img src="아프리카정보/라이베리아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap12">
+  <div class="modal_close12"><a href="#"></a></div>
+  <div><img src="아프리카정보/레소토.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap13">
+  <div class="modal_close13"><a href="#"></a></div>
+  <div><img src="아프리카정보/르완다.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap14">
+  <div class="modal_close14"><a href="#"></a></div>
+  <div><img src="아프리카정보/마다가스카르.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap15">
+  <div class="modal_close15"><a href="#"></a></div>
+  <div><img src="아프리카정보/말라위.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap16">
+  <div class="modal_close16"><a href="#"></a></div>
+  <div><img src="아프리카정보/말리.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap17">
+  <div class="modal_close17"><a href="#"></a></div>
+  <div><img src="아프리카정보/모리셔스.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap18">
+  <div class="modal_close18"><a href="#"></a></div>
+  <div><img src="아프리카정보/모잠비크.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap19">
+  <div class="modal_close19"><a href="#"></a></div>
+  <div><img src="아프리카정보/베냉.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap20">
+  <div class="modal_close20"><a href="#"></a></div>
+  <div><img src="아프리카정보/보츠와나.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap21">
+  <div class="modal_close21"><a href="#"></a></div>
+  <div><img src="아프리카정보/부룬디.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap22">
+  <div class="modal_close22"><a href="#"></a></div>
+  <div><img src="아프리카정보/부르키나파소.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap23">
+  <div class="modal_close23"><a href="#"></a></div>
+  <div><img src="아프리카정보/상투메프린시페.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap24">
+  <div class="modal_close24"><a href="#"></a></div>
+  <div><img src="아프리카정보/세네갈.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap25">
+  <div class="modal_close25"><a href="#"></a></div>
+  <div><img src="아프리카정보/세이셸.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap26">
+  <div class="modal_close26"><a href="#"></a></div>
+  <div><img src="아프리카정보/소말리아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap27">
+  <div class="modal_close27"><a href="#"></a></div>
+  <div><img src="아프리카정보/수단.jpg" width="800" height="500"></div>
+</div>
+<div class="modal_wrap28">
+  <div class="modal_close28"><a href="#"></a></div>
+  <div><img src="아프리카정보/시에라리온.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap29">
+  <div class="modal_close29"><a href="#"></a></div>
+  <div><img src="아프리카정보/앙골라.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap30">
+  <div class="modal_close30"><a href="#"></a></div>
+  <div><img src="아프리카정보/에리트레아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap31">
+  <div class="modal_close31"><a href="#"></a></div>
+  <div><img src="아프리카정보/에스와티니.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap32">
+  <div class="modal_close32"><a href="#"></a></div>
+  <div><img src="아프리카정보/에티오피아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap33">
+  <div class="modal_close33"><a href="#"></a></div>
+  <div><img src="아프리카정보/우간다.jpg" width="800" height="500"></div>
+</div>
+<div class="modal_wrap34">
+  <div class="modal_close34"><a href="#"></a></div>
+  <div><img src="아프리카정보/담비아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap35">
+  <div class="modal_close35"><a href="#"></a></div>
+  <div><img src="아프리카정보/적도기니.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap36">
+  <div class="modal_close36"><a href="#"></a></div>
+  <div><img src="아프리카정보/중앙아프리카.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap37">
+  <div class="modal_close37"><a href="#"></a></div>
+  <div><img src="아프리카정보/지부티.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap38">
+  <div class="modal_close38"><a href="#"></a></div>
+  <div><img src="아프리카정보/짐바브웨.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap39">
+  <div class="modal_close39"><a href="#"></a></div>
+  <div><img src="아프리카정보/차드.jpg" width="800" height="500"></div>
+</div>
+<div class="modal_wrap40">
+  <div class="modal_close40"><a href="#"></a></div>
+  <div><img src="아프리카정보/카보베르데.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap41">
+  <div class="modal_close41"><a href="#"></a></div>
+  <div><img src="아프리카정보/케냐.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap42">
+  <div class="modal_close42"><a href="#"></a></div>
+  <div><img src="아프리카정보/코모로.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap43">
+  <div class="modal_close43"><a href="#"></a></div>
+  <div><img src="아프리카정보/코트디부아르.jpg" width="800" height="500"></div>
+</div>
+
+
+
+<div class="modal_wrap45">
+  <div class="modal_close45"><a href="#"></a></div>
+  <div><img src="아프리카정보/콩고민주공화국.jpg" width="800" height="500"></div>
+</div>
+<div class="modal_wrap46">
+  <div class="modal_close46"><a href="#"></a></div>
+  <div><img src="아프리카정보/탄자니아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap47">
+  <div class="modal_close47"><a href="#"></a></div>
+  <div><img src="아프리카정보/토고.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap48">
+  <div class="modal_close48"><a href="#"></a></div>
+  <div><img src="아프리카정보/레바논.jpg" width="800" height="500"></div>
+</div>
+
+
+<div class="modal_wrap50">
+  <div class="modal_close50"><a href="#"></a></div>
+  <div><img src="아프리카정보/모로코.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap51">
+  <div class="modal_close51"><a href="#"></a></div>
+  <div><img src="아프리카정보/모리티니아이슬람.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap52">
+  <div class="modal_close52"><a href="#"></a></div>
+  <div><img src="아프리카정보/바레인.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap53">
+  <div class="modal_close53"><a href="#"></a></div>
+  <div><img src="아프리카정보/사우디아라비아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap54">
+  <div class="modal_close54"><a href="#"></a></div>
+  <div><img src="아프리카정보/시리아.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap55">
+  <div class="modal_close55"><a href="#"></a></div>
+  <div><img src="아프리카정보/아랍에미리트.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap56">
+  <div class="modal_close56"><a href="#"></a></div>
+  <div><img src="아프리카정보/알제리.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap57">
+  <div class="modal_close57"><a href="#"></a></div>
+  <div><img src="아프리카정보/예멘.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap58">
+  <div class="modal_close58"><a href="#"></a></div>
+  <div><img src="아프리카정보/오만.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap59">
+  <div class="modal_close59"><a href="#"></a></div>
+  <div><img src="아프리카정보/요르단.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap60">
+  <div class="modal_close60"><a href="#"></a></div>
+  <div><img src="아프리카정보/이라크.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap61">
+  <div class="modal_close61"><a href="#"></a></div>
+  <div><img src="아프리카정보/이란.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap62">
+  <div class="modal_close62"><a href="#"></a></div>
+  <div><img src="아프리카정보/이스라엘.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap63">
+  <div class="modal_close63"><a href="#"></a></div>
+  <div><img src="아프리카정보/이집트.jpg" width="800" height="500"></div>
+</div>
+
+<div class="modal_wrap64">
+  <div class="modal_close64"><a href="#"></a></div>
+  <div><img src="아프리카정보/카타르.jpg" width="800" height="500"></div>
+</div>
+
+
+
+
+<div class="modal_wrap67">
+  <div class="modal_close67"><a href="#"></a></div>
+  <div><img src="아프리카정보/팔레스타인.jpg" width="800" height="500"></div>
+</div>
+
+   
+</body>
+</html>
